@@ -32,3 +32,13 @@ A modern, open-source Microsoft Access alternative built with **Tauri, Svelte, a
    ```bash
    git clone https://github.com/your-username/openaccess.git
    cd openaccess
+
+2. Install Node.js dependencies
+   npm install
+   or
+   pnpm install
+
+3. Run the development server
+   npm run dev
+   or
+   pnpm dev
