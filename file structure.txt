@@ -5,6 +5,7 @@ openaccess/
 ├── vite.config.js                  # Vite configuration
 ├── tauri.conf.json                 # Tauri configuration
 └── README.md
+├── src/                            # Frontend (Svelte)
 │   ├── App.svelte                  # Main app component
 │   └── main.js                     # Entry point
 │   ├── lib/                        # Utility functions
