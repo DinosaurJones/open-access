@@ -1,0 +1,21 @@
+openaccess/
+├── index.html
+├── LICENSE
+├── package.json                    # Node.js dependencies
+├── vite.config.js                  # Vite configuration
+├── tauri.conf.json                 # Tauri configuration
+└── README.md
+│   ├── App.svelte                  # Main app component
+│   └── main.js                     # Entry point
+│   ├── lib/                        # Utility functions
+│   │   └── database.js             # Database operations
+│   ├── styles/                     # CSS files
+│   │   └── global.css
+├── src-tauri/                      # Backend (Rust)
+│   ├── Cargo.toml                  # Rust dependencies
+│   └── main.rs                     # Rust entry point
+│   ├── components/                 # Reusable components
+│   │   ├── DatabaseExplorer.svelte
+│   │   ├── TableViewer.svelte
+│   │   ├── RowEditor.svelte
+│   │   └── CreateTableModal.svelte

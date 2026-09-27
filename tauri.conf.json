@@ -1,0 +1,71 @@
+{
+  "build": {
+    "beforeDevCommand": "",
+    "beforeBuildCommand": "",
+    "devPath": "http://localhost:5173",
+    "distDir": "../dist",
+    "withGlobalTauri": true
+  },
+  "package": {
+    "productName": "OpenAccess",
+    "version": "0.1.0",
+    "authors": ["You"],
+    "description": "A modern database manager with custom forms and reports",
+    "license": "AGPL-3.0"
+  },
+  "tauri": {
+    "allowlist": {
+      "all": false,
+      "shell": {
+        "all": false,
+        "open": true
+      },
+      "dialog": {
+        "all": true
+      },
+      "fs": {
+        "all": false,
+        "readFile": true,
+        "writeFile": true,
+        "exists": true
+      },
+      "path": {
+        "all": true
+      },
+      "sql": {
+        "all": true
+      }
+    },
+    "bundle": {
+      "active": true,
+      "targets": ["all"],
+      "identifier": "com.example.openaccess",
+      "icon": [
+        {"path": "icons/32x32.png", "size": 32},
+        {"path": "icons/128x128.png", "size": 128},
+        {"path": "icons/128x128@2x.png", "size": 256},
+        {"path": "icons/icon.icns", "platform": "darwin"},
+        {"path": "icons/icon.ico", "platform": "windows"}
+      ]
+    },
+    "updater": {
+      "active": false
+    },
+    "windows": [
+      {
+        "title": "OpenAccess",
+        "width": 1024,
+        "height": 768,
+        "minWidth": 800,
+        "minHeight": 600,
+        "resizable": true,
+        "decorations": true,
+        "visible": true,
+        "center": true
+      }
+    ],
+    "systemTray": {
+      "active": false
+    }
+  }
+}

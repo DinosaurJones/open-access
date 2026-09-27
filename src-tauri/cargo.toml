@@ -1,0 +1,22 @@
+[package]
+name = "openaccess"
+version = "0.1.0"
+description = "A modern Microsoft Access alternative"
+authors = ["You"]
+license = "AGPL-3.0"
+repository = ""
+edition = "2021"
+rust-version = "1.70"
+
+[build-dependencies]
+tauri-build = { version = "2.0.0", features = [] }
+
+[dependencies]
+tauri = { version = "2.0.0", features = ["shell-open", "dialog-open", "path-all", "fs-read-file", "fs-write-file", "fs-exists"] }
+tauri-plugin-sql = { version = "2.0.0", features = ["sqlite"] }
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+
+[features]
+# default features are not set by default
+custom-protocol = ["tauri/custom-protocol"]
