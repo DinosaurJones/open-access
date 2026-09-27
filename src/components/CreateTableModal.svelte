@@ -267,10 +267,6 @@
 </div>
 
 <style>
-  .create-table-modal {
-    /* This component renders its own modal overlay */
-  }
-
   .wide {
     max-width: 900px;
     width: 95%;

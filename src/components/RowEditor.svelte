@@ -211,10 +211,6 @@
 </div>
 
 <style>
-  .row-editor {
-    /* This component renders its own modal overlay */
-  }
-
   .form-grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
